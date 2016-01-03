@@ -1,0 +1,96 @@
+<% provide(:title, "Contact") %>
+
+
+<div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center">Make Contact</h1>
+                <hr>
+            </div>
+</div>
+
+<div class="row">
+  <div class="col-sm-9">
+<%= form_for @message, url: contact_path do |message_form| %>
+
+
+      <div class="row form-group">
+
+  <fieldset>
+
+    <div class="col-sm-4">
+      <%= message_form.label :first_name %>
+      <%= message_form.text_field :first_name %>
+    </div>
+
+
+    <div class="col-sm-3">
+      <%= message_form.label :last_name %>
+
+      <%= message_form.text_field :last_name %>
+    </div>
+    <div class="col-sm-4">
+      <%= message_form.label :email %>
+
+      <%= message_form.text_field :email %>
+    </div>
+    
+
+
+    <div class="row form-group">
+      <div class="col-sm-4">
+
+      <%= message_form.label :title %>
+ 
+      <%= message_form.text_field :title %>
+      </div>
+    
+      <div class="col-sm-3">
+
+      <%= message_form.label :phone %>
+  
+      <%= message_form.email_field :email %>
+      </div>
+    </div>
+  
+    <div class="row form-group">
+      <div class="col-sm-4">
+
+      <%= message_form.label :content %>
+  
+      <%= message_form.text_area :content %>
+      </div>
+    </div>
+
+  </fieldset>
+  
+  <fieldset>
+    <div class="row form-group">
+    <div class="col-sm-11">
+
+     <%= message_form.submit "Contact Us", class: "btn btn-default btn-lg pull-right" %>
+
+    </div>
+  </fieldset>
+<% end %>
+
+</div>
+
+
+<div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+<div id="msgSubmit" class="h3 text-center hidden">Message Submitted!</div>
+
+        
