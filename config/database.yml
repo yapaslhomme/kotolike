@@ -27,6 +27,6 @@ production:
 
   pool: 5
   host: <%= ENV['DB_HOST'] %>
-  database: <%= ENV['DB_NAME'] %>
-  username: <%= ENV['DB_USER'] %>
-  password: <%= ENV['DB_PASSEWORD'] %>
+  database: your_rails_db
+  username: deploy
+  password: role_password
