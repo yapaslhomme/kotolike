@@ -10,7 +10,7 @@ class MessageMailer < ActionMailer::Base
 
     #@url  = 'http://example.com/login'
     #mail(to: @user.email, subject: 'Welcome to My Awesome Site')
-    mail subject: "Message from #{message.title}"
+    mail (to: "CHOOSESTAY@GMAIL.COM", subject: "Message from #{message.title}"
   end
 
 

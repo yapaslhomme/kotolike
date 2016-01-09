@@ -36,8 +36,8 @@ module Shop
       enable_starttls_auto: true
     }
 
-    config.action_mailer.default_url_options = {
-      host: "46.101.252.174"
-    }
+    #config.action_mailer.default_url_options = {
+    #  host: "46.101.252.174"
+    #}
   end
 end
