@@ -2,8 +2,8 @@
 class MessageMailer < ActionMailer::Base
 
 
-  default from: "Your Mailer <noreply@yourdomain.com>"
-  default to: "Your Name <your.email@yourdomain.com>"
+  default from: "Your Mailer <KOTONIKE@GMAIL.com>"
+  default to: "Your Name <CHOOSESTAY@GMAIL.com>"
 
   def new_message(message)
     @message = message

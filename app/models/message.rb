@@ -19,7 +19,7 @@ class Message
     presence: true
 
   validates :phone,
-  	presence: false  
+  	presence: true  
 
 end
 
