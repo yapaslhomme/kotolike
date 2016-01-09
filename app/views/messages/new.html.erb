@@ -10,7 +10,7 @@
                       <hr>
                       <hr>
 
-                <h2 class="text-center">Make Contact</h2>
+                <h2 class="text-center">Contact Us</h2>
 
           <form role="form">
             <div class="col-lg-6">
@@ -20,7 +20,7 @@
               <div class="form-group">
                 <div class="input-group">
 
-                <%= message_form.label :first_name, labelfor: "InputName" %>
+                <%= message_form.label :first_name %>
                 <%= message_form.text_field :first_name, class: "form-control", placeholder: "Enter First Name" %>
                 </div>
               </div>
@@ -74,9 +74,13 @@
                 </div>
 
               </div>
-
+  <div class="form-group">
+                <div class="input-group">
             
                <%= message_form.submit "Contact Us", class: "btn btn-info pull-right" %>
+                </div>
+
+              </div>
           <% end %>
         </div>
 
