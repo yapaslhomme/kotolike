@@ -26,15 +26,15 @@ module Shop
     config.action_mailer.smtp_settings = {
       address: "smtp.gmail.com",
       port: 587,
-      domain: "<example.tld>",
-      user_name: "<username>",
-      password: "<password>",
+      domain: "gmail.com",
+      user_name: "KOTONIKE@GMAIL.COM",
+      password: "enmodetest",
       authentication: :plain,
       enable_starttls_auto: true
     }
 
     config.action_mailer.default_url_options = {
-      host: "yourdomain.tld"
+      host: "46.101.252.174"
     }
   end
 end
