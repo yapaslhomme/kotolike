@@ -1,18 +1,17 @@
 Rails.application.routes.draw do
 
-  get 'static_pages/help'
+  get 'help' => 'static_pages#help'
 
-  get 'static_pages/contact'
+  get 'contacts' => 'static_pages#contact'
 
-  get 'static_pages/service'
+  get 'payment' => 'static_pages#service'
 
-  get 'static_pages/about'
+  get 'about' => 'static_pages#about'
 
-  get 'static_pages/mention'
+  get 'mention' => 'static_pages#mention'
 
-  get 'static_pages/condition'
-
-  get 'static_pages/how'
+  get 'condition' => 'static_pages#condition'
+  get 'how' => 'static_pages#how'
 
   get 'contact', to: 'messages#new', as: 'contact'
   post 'contact', to: 'messages#create'

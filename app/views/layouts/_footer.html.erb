@@ -2,43 +2,40 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xs-6 col-sm-6 col-md-3 column">
-                <h4>Information</h4>
+                <h4>Nos villes</h4>
                 <ul class="nav">
-                    <li><a href="about-us.html">Products</a></li>
-                    <li><a href="about-us.html">Services</a></li>
-                    <li><a href="abut-us.html">Benefits</a></li>
-                    <li><a href="elements.html">Developers</a></li>
+                    <li><a href="#">Abidjan</a></li>
+                    <li><a href="#">Services</a></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
-                <h4>Follow Us</h4>
+                <h4>Rejoignez nous</h4>
                 <ul class="nav">
-                    <li><a href="#">Twitter</a></li>
-                    <li><a href="#">Facebook</a></li>
+                    <li><%= link_to "Twitter", '#' %></li>
+                    <li><%= link_to "Facebook", '#' %></li>
 
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
                 <h4>Contact Us</h4>
                 <ul class="nav">
-                    <li><a href="#">Email</a></li>
-                    <li><a href="#">Headquarters</a></li>
-                    <li><a href="#">Management</a></li>
-                    <li><a href="#">Support</a></li>
+                    <li><%= link_to "Mail", '#' %></li>
+                    <li><%= link_to "Contact", '#' %></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
-                <h4>Customer Service</h4>
+                <h4>Société</h4>
                 <ul class="nav">
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Delivery Information</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Terms &amp; Conditions</a></li>
+                    <li><%= link_to "A Propos", about_path %></li>
+                    <li><%= link_to "Mentions Légales", mention_path %></li>
+                    <li><%= link_to "Conditions générales de Services", condition_path %></li>
+                    <li><%= link_to "Moyen de paiement", payment_path %></li>
+
                 </ul>
             </div>
         </div>
         <!--/row-->
-        <p class="text-right">what's your name©2015</p>
+        <p class="text-right">DII GWA©2015</p>
     </div>
 </footer>
 
