@@ -4,7 +4,10 @@ require 'rails/all'
 
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
-Bundler.require(*Rails.groups)
+#Bundler.require(*Rails.groups)
+
+Bundler.require(*Rails.groups(assets: %w(development test)))
+
 
 module Shop
   class Application < Rails::Application
@@ -24,17 +27,8 @@ module Shop
     config.log_level = :info
     config.active_record.raise_in_transactional_callbacks = true
 
-    config.action_mailer.delivery_method = :smtp
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
-    config.action_mailer.smtp_settings = {
-      address: "smtp.gmail.com",
-      port: 587,
-      domain: "<gmail.com>",
-      user_name: "<KOTONIKE@GMAIL.COM>",
-      password: "<enmodetest>",
-      authentication: :plain,
-      enable_starttls_auto: true
-    }
 
     #config.action_mailer.default_url_options = {
     #  host: "46.101.252.174"
