@@ -27,7 +27,7 @@ module Shop
     config.log_level = :info
     config.active_record.raise_in_transactional_callbacks = true
 
-    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    #config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
 
 
     #config.action_mailer.default_url_options = {
