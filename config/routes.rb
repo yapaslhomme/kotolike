@@ -10,6 +10,10 @@ Rails.application.routes.draw do
 
   get 'mention' => 'static_pages#mention'
 
+  get 'conciergerie' => 'static_pages#conciergerie'
+
+  get 'commerce' => 'static_pages#commerce'
+
   get 'condition' => 'static_pages#condition'
   get 'how' => 'static_pages#how'
 

@@ -4,8 +4,10 @@
             <div class="col-xs-6 col-sm-6 col-md-3 column">
                 <h4>Qui est ce ?</h4>
                 <ul class="nav">
-                    <li><a href="#">Site e-commerce</a></li>
-                    <li><a href="#">Votre beinguiste</li>
+                    <li><%= link_to "e-commerce pour les africains", commerce_path %></li>
+                    <li><%= link_to "e-conciergerie pour les africains", conciergerie_path %></li>
+                    
+                    <li><%= link_to "Aide", help_path %></li>
                 </ul>
             </div>
             <div class="col-xs-6 col-md-3 column">
@@ -13,6 +15,7 @@
                 <ul class="nav">
                     <li><%= link_to "Twitter", 'https://twitter.com/DiiGwa', :target => "_blank" %></li>
                     <li><%= link_to "Facebook", 'https://www.facebook.com/diigwa/', :target => "_blank" %></li>
+                    <li><%= link_to "Google +", 'https://www.facebook.com/diigwa/', :target => "_blank" %></li>
 
                 </ul>
             </div>
@@ -35,7 +38,7 @@
             </div>
         </div>
         <!--/row-->
-        <p class="text-right">DII GWA©2015</p>
+        <p class="text-right">dii gwa©2016</p>
     </div>
 </footer>
 

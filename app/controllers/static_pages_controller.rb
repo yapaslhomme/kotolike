@@ -23,4 +23,12 @@ class StaticPagesController < ApplicationController
 
   def how
   end
+
+  def commerce
+  end
+
+
+  def conciergerie
+  end
+
 end
