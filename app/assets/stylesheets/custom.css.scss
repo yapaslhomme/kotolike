@@ -224,5 +224,96 @@ height: 100%;
 .flex-video { padding-top: 0; }
 }
 
+/* bootstrap 3 helpers */
 
+.navbar-form input, .form-inline input {
+  width:auto;
+}
+
+/* end */
+
+/* custom theme */
+
+header {
+  min-height:230px;
+    margin-bottom:5px;
+}
+
+@media (min-width: 979px) {
+  #sidebar.affix-top {
+      position: static;
+  }
+  
+  #sidebar.affix {
+      position: fixed;
+      top: 0;
+      width:21.2%;
+  }
+}
+
+.affix,.affix-top {
+   position:static;
+}
+
+/* theme */
+
+body {
+  color:#828282;
+  background-color:#eee;
+}
+
+a,a:hover {
+  color:#ff3333;
+    text-decoration:none;
+}
+
+.highlight-bk {
+  background-color:#ff3333;
+    padding:1px;
+    width:100%;
+}
+
+.highlight {
+  color:#5491bd;
+}
+  
+h3.highlight  {
+  padding-top:13px;
+    padding-bottom:14px;
+    border-bottom:2px solid #5491bd;
+}
+
+
+
+.accordion-group {
+  border-width:0;
+}
+
+.dropdown-menu {
+  min-width: 250px;
+}
+
+.accordion-heading .accordion-toggle, .accordion-inner, .nav-stacked li > a {
+  padding-left:1px;
+}
+
+.caret {
+  color:#fff;
+}
+
+.navbar-toggle {
+  color:#fff;
+    border-width:0;
+}
+  
+.navbar-toggle:hover {
+  background-color:#fff;
+}
+
+.panel {
+  padding-left:27px;
+    padding-right:27px;
+}
+
+/* end theme */
 
